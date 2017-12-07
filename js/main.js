@@ -138,6 +138,37 @@ jQuery(document).ready(function( $ ) {
   }
   google.maps.event.addDomListener(window, 'load', initialize_google_map);
 
-// custom code
+  // custom code
+
+  // Get the modal
+  var modal = document.getElementById('myModal');
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var images = document.getElementsByClassName('portfolio-image');
+
+  var img = document.getElementById('retail1');
+  var modalImg = document.getElementById("modalImg");
+  var captionText = document.getElementById("caption");
+
+  for (var i=0; i<images.length; i++) {
+    images[i].onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+      $("body").addClass("modal-open");
+    }
+  }
+  
+  // img.onclick = function(){
+  //   modal.style.display = "block";
+  //   modalImg.src = this.src;
+  //   captionText.innerHTML = this.alt;
+  //   $("body").addClass("modal-open");
+  // }
+
+  $("#myModal")[0].onclick = function() { 
+    modal.style.display = "none";
+    $("body").removeClass("modal-open")
+  }
 
 });
