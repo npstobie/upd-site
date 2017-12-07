@@ -584,7 +584,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 50px;
   text-align: center;
   border: 1px solid #e6e6e6;
-  height: 200px;
+  height: 210px;
   position: relative;
   background: #fafafa;
 }
@@ -627,7 +627,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services .title {
   font-weight: 700;
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 
@@ -638,6 +638,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services .description {
   font-size: 14px;
   line-height: 24px;
+}
+
+.service-list {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
 }
 
 /* Call To Action Section
@@ -953,4 +959,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ccc;
+}
+
+
+/*--------------------------------------------------------------
+# Misc
+--------------------------------------------------------------*/
+.custom-p {
+  padding-bottom: 0px !important;
+  margin-bottom: 10px !important;
 }
