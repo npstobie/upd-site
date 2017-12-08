@@ -158,13 +158,6 @@ jQuery(document).ready(function( $ ) {
       $("body").addClass("modal-open");
     }
   }
-  
-  // img.onclick = function(){
-  //   modal.style.display = "block";
-  //   modalImg.src = this.src;
-  //   captionText.innerHTML = this.alt;
-  //   $("body").addClass("modal-open");
-  // }
 
   $("#myModal")[0].onclick = function() { 
     modal.style.display = "none";
