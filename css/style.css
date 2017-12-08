@@ -144,8 +144,18 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   width: 100%;
   height: 100vh;
-  background: url(../img/cover.JPG) top center fixed;
+  background: url(../img/cover.JPG) center center fixed;
   background-size: cover;
+}
+
+@media (max-width: 500px) {
+  #hero {
+    background: url(../img/cover_phone.JPG) center center fixed;
+  }
+  .banner-nums a {
+    color: white;
+    font-weight: 300px;
+  }
 }
 
 #hero .hero-container {
@@ -166,14 +176,34 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.fire-sub {
+  font-size: 38px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 50px;
+}
+
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
   }
+  .fire-sub {
+    font-size: 24px;
+    line-height: 32px;
+  }
   .banner-divider {
     display: none !important;
   }
+  #logo-img {
+    width: 40%;
+  }
+}
+
+#logo-img {
+  margin-top: 70px;
 }
 
 #hero h2 {
@@ -862,7 +892,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Contact Section
 --------------------------------*/
 #contact {
-  background: #f7f7f7;
+  background: #fff;
   padding: 80px 0 40px 0;
 }
 
@@ -990,6 +1020,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Misc
 --------------------------------------------------------------*/
+.send-button {
+  margin-bottom: 25px;
+}
+
 .custom-p {
   padding-bottom: 0px !important;
   margin-bottom: 10px !important;
